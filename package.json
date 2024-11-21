@@ -1,12 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "api/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "node api/app.js",
     "build": "echo \"No build step required for Node.js backend\"",
-    "dev": "nodemon app.js",
+    "dev": "node api/app.js",  // Remove nodemon as it's not necessary in production
     "lint": "eslint .",
     "prestart": "npm install",
     "clean": "rm -rf node_modules && npm install",
@@ -29,4 +29,3 @@
     "eslint-plugin-node": "^11.1.0"
   }
 }
-
